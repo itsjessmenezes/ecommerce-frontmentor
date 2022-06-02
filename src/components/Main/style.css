@@ -1,0 +1,113 @@
+main {
+  display: flex;
+  margin: 50px 0;
+}
+
+.image-side,
+.info-side {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.image-side {
+  width: 100%;
+  align-items: center;
+}
+
+.image-side>img {
+  width: 500px;
+  margin-bottom: 30px;
+  border-radius: 15px;
+}
+
+.image-side img:hover {
+  cursor: pointer;
+}
+
+.info-side {
+  display: flex;
+  justify-content: center;
+}
+
+.info-side h3 {
+  margin-bottom: 20px;
+
+  color: var(--primary-orange);
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.info-side h2,
+.info-side .description {
+  max-width: 400px;
+
+}
+
+.info-side h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.info-side .description {
+  margin-bottom: 20px;
+  color: var(--dark-grayish-blue);
+  font-size: 14px;
+}
+
+.info-side .price-discount {
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.info-side .price-discount .price {
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.info-side .price-discount .discount {
+  background-color: var(--pale-orange);
+  padding: 5px;
+  border-radius: 5px;
+
+  color: var(--primary-orange);
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.info-side .old-price {
+  margin-bottom: 30px;
+  color: var(--grayish-blue);
+  font-weight: bold;
+  text-decoration: line-through;
+}
+
+.buttons {
+  display: flex;
+  max-width: 400px;
+}
+
+.quantity {
+  background-color: var(--light-grayish-blue);
+  display: flex;
+  flex: 1;
+  margin-right: 20px;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.quantity img:hover,
+.add-cart:hover {
+  cursor: pointer;
+}
+
+.btn img {
+  margin-right: 10px;
+}
